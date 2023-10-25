@@ -1,6 +1,7 @@
-const port = 3000;
+// const port = 3000;
 
-Deno.serve({ port }, async () => {
+// Deno.serve({ port }, async () => {
   const text = await Deno.readTextFile('failas.txt');
-  return new Response(text, { status: 200 });
-});
+  console.log(text);
+  // return new Response(text, { status: 200 });
+// });

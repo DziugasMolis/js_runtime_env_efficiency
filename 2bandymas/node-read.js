@@ -1,9 +1,10 @@
-const http = require('http');
+// const http = require('http');
 const fs = require('fs');
 
-http.createServer((req, res) => {
+// http.createServer((req, res) => {
     fs.readFile('./failas.txt', (err, data) => {
         if (err) throw err;
-        res.end(data);
+        // res.end(data);
+        console.log(data.toString());
     });
-}).listen(3000);
+// }).listen(3000);
